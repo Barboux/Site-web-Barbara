@@ -1,0 +1,238 @@
+/*précharger les typo*/
+@font-face{
+    font-family: Oswald-Bold;
+    src: url(assets/fonts/Oswald/Oswald-Bold.ttf);
+}
+
+
+
+
+/*BODY*/
+body{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(to bottom right, rgb(8, 8, 8), rgb(47, 109, 176),rgb(8, 8, 8));
+    font-family: 'Oswald-Regular', sans-serif;
+    font-weight: bold;
+    color: rgb(213, 234, 236);
+    min-height: 100vh;
+    margin: 0;
+    margin-bottom: 3%;
+    
+}
+/*HEADER*/
+header{
+    background:linear-gradient(rgb(34, 34, 34), rgb(16, 16, 16));
+    color: rgb(34, 34, 34);
+    overflow: hidden;
+    height: 100px;
+    margin-top: 0;
+    padding-top: 0;
+    /*Sticky menu/header*/
+    position: sticky;
+    top: 2px;
+    z-index: 1000;
+    justify-content: space-between;
+    opacity: 95%;
+}
+
+.logo img{
+    display: flex;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 500px;
+    margin-top: -35px;
+    text-indent: 50px;
+    
+}
+
+ul li{
+    display: inline-block;
+    margin-right: 20px;
+} 
+
+a{
+    text-decoration: none;
+    color: rgb(139, 200, 243);
+}
+
+a:hover{
+    text-decoration:underline;
+    text-decoration-color: rgb(139, 200, 243);
+}
+
+.home section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home article{
+    text-align: center;
+}
+.home article img{
+    width: 115%;
+    opacity: 1;
+    border-radius: 7%;
+}
+.home article img:hover{
+    opacity: 0.7;
+    box-shadow: inset;
+    shape-outside: radial-gradient(aqua);
+    transform: scale(1.03);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+footer{
+    background:linear-gradient(rgb(31, 31, 31), rgb(18, 18, 18));
+    color: rgb(139, 200, 243);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    opacity: 95%;
+}
+
+.accueil body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald-Regular', sans-serif;
+}
+
+.accueil main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.accueil {
+    text-align: center;
+    color: rgb(143, 189, 249);
+    background:linear-gradient(rgb(34, 34, 34), rgb(16, 16, 16)); 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+}
+
+.accueil h1 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.accueil p{
+    font-size: 50px;
+    text-align: center;
+}
+
+.form-container {
+    max-width: 600px;
+    margin:0 auto;
+    background:linear-gradient(rgb(26, 26, 26), rgb(16, 16, 16));
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-container h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact-form {
+    display: grid;
+    grid-gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #555;
+    color: rgb(255, 255, 255);
+    resize: none;
+    margin-right: 50px;
+}
+
+button {
+    background: linear-gradient(to right bottom, rgb(90, 175, 236), #244474);
+    color: #101010;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(36, 68, 116);
+    color: rgb(205, 236, 239);
+    transition: 0.1s;
+}
+
+.viego img{
+    width: 100%;
+    opacity: 1;
+    position: absolute;
+    right: 0%;
+    margin: 0;
+
+}
+
+.viego figure{
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 430px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        overflow: auto;
+        max-height: 150px;
+    }
+
+    header a {
+        text-decoration: none;
+        color: #4a64a7;
+        padding: 10px;
+        display: block;
+        cursor: pointer;
+    }
+    
+    header a:hover {
+        background-color: #2d2d2d;
+    }
+}
